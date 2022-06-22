@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ToDo list</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/941914e3d2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav-bar">
+    <i class="fa-solid fa-table-list fa-4x"></i>
+    <p class="nav-title">ToDo List </p>
+    </nav>
+
+    <div class="side-bar">
+     <h1 class="side-divider-h2">Todo Divider</h1>
+
+       <ul class="divider-ul-list">
+
+       </ul>
+       <i class="fa-solid fa-folder-plus add-divider-btn"></i>
+
+
+    </div>
+
+    <div class="main-body">
+      <div class="display" id="display">
+          <div class="diplay-message-box">
+            <h2 id="message-box-header"> </h2>
+            <form class="todo-form">
+             <div class="todo-form-left">
+                <label for="title">ToDo Title</label>
+                <input type="text" name="title" value="" class="todo-input todo-title" maxlength="15" required>
+                <label for="description">Decsription</label>
+                <input type="text" name="description" value="" class="todo-input todo-description"  maxlength="15">
+                <button type="submit" name="button" class="form-btn-submit form-btn" >Submit</button>
+             </div>
+             <div class="todo-form-right">
+                <label for="priority">Priority</label>
+                <input type="text" name="priority" value="" class="todo-input todo-priority"  maxlength="15">
+                <label for="duedate">Due Date</label>
+                <input type="date" name="duedate" value="" class="todo-input todo-dueDate">
+                <button type="button" name="button" class="form-btn-cancel form-btn">Cancel</button>
+             </div>
+            </form>
+
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
